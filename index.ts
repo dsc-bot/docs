@@ -28,3 +28,5 @@ const articles: Article[] = [
     slug: 'test',
   },
 ];
+
+export { fallbackLanguage, availableLanguages, articles };
