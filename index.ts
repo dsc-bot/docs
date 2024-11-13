@@ -19,13 +19,29 @@ const availableLanguages: TranslationLangs[] = ['en-US'];
  */
 const articles: Article[] = [
   {
-    labelKey: 'docs.intro',
-    slug: '@index',
+    labelKey: 'Documentation',
+    slug: '@',
   },
 
   {
-    labelKey: 'docs.test',
-    slug: 'test',
+    labelKey: 'Something',
+    slug: 'something',
+    articles: [
+      {
+        labelKey: 'Getting Started',
+        slug: 'test',
+        articles: [
+          {
+            labelKey: 'Installation',
+            slug: 'subarticle',
+          },
+          {
+            labelKey: 'Project Structure',
+            slug: 'subarticle2',
+          },
+        ],
+      },
+    ],
   },
 ];
 
