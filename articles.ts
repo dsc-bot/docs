@@ -1,52 +1,45 @@
-const availableLanguages = [
+export const availableLanguages = [
   "en-US"
 ];
-
-const articles = [
-  {
-    "language": "en-US",
+export const articles = {
+  "en-US": {
+    "paths": {
+      "@": "/index.md",
+      "/something": "/something/index.md",
+      "/something/test/subarticle2": "/something/test/subarticle2.md",
+      "/something/test": "/something/test/index.md",
+      "/something/test/subarticle": "/something/test/subarticle/index.md"
+    },
     "articles": [
       {
         "metadata": {
-          "title": "Hello World"
+          "title": "Hello WorldZS"
         },
         "slug": "@"
       },
       {
+        "metadata": {
+          "title": "Hello World312"
+        },
         "slug": "something",
         "articles": [
           {
             "metadata": {
-              "title": "Hello World"
+              "title": "Hello Worldsafdgggggggggggggggggggggggg"
             },
-            "slug": "something"
-          },
-          {
-            "metadata": {
-              "title": "Hello World"
-            },
-            "slug": "subarticle2",
-            "articles": []
-          },
-          {
             "slug": "test",
             "articles": [
               {
                 "metadata": {
-                  "title": "Hello World"
+                  "title": "Hello Worlddgfs"
                 },
-                "slug": "test"
+                "slug": "subarticle2"
               },
               {
-                "slug": "subarticle",
-                "articles": [
-                  {
-                    "metadata": {
-                      "title": "Hello World"
-                    },
-                    "slug": "subarticle"
-                  }
-                ]
+                "metadata": {
+                  "title": "Hello World4356"
+                },
+                "slug": "subarticle"
               }
             ]
           }
@@ -54,6 +47,4 @@ const articles = [
       }
     ]
   }
-];
-
-export { availableLanguages, articles };
+};
