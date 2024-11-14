@@ -1,0 +1,19 @@
+{
+  "name": "um-front-docs-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gen": "tsx generateMetadata.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^11.0.0",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
