@@ -1,7 +1,13 @@
-export const availableLanguages = [
-  "en-US"
-];
-export const articles = {
+/**
+ *
+ *
+ * DO NOT MANUALLY EDIT - THIS FILE IS PROGRAMMATICALLY GENERATED - scripts/generateMetadata.ts 
+ *
+ *
+*/
+import type { AvailableLanguages, Articles } from './types';
+export const fallbackLanguage = 'en-US';
+export const articles: Articles = {
   "en-US": {
     "paths": {
       "@": "/index.md",
@@ -48,3 +54,6 @@ export const articles = {
     ]
   }
 };
+export const availableLanguages: AvailableLanguages = [
+  "en-US"
+];

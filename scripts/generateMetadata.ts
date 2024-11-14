@@ -58,9 +58,12 @@ async function processMarkdownFiles() {
     };
   }
 
-  const output = `export const availableLanguages = ${JSON.stringify(availableLanguages, null, 2)};
-export const articles = ${JSON.stringify(articlesByLanguage, null, 2)};`;
-
+  const output =
+    `/**\n *\n *\n * DO NOT MANUALLY EDIT - THIS FILE IS PROGRAMMATICALLY GENERATED - scripts/generateMetadata.ts \n *\n *\n*/\n` +
+    `import type { AvailableLanguages, Articles } from './types';\n` +
+    `export const fallbackLanguage = 'en-US';\n` +
+    `export const articles: Articles = ${JSON.stringify(articlesByLanguage, null, 2)};\n` +
+    `export const availableLanguages: AvailableLanguages = ${JSON.stringify(availableLanguages, null, 2)};\n`;
   writeFileSync('../articles.ts', output);
 }
 
