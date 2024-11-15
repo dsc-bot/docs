@@ -52,8 +52,8 @@ function buildArticle(paths: LanguageData['paths'], articles: Article[], rootPat
     paths[article.slug === '@' ? '@' : articlePath.replace('.md', '')] = articlePath + (isDir?'/index.md' :'')
     if (isDir) {
       const built = buildArticle(paths, [], filePath, depth+1);
-      article.articles = built.articles;
       paths = Object.assign(paths, built.paths);
+      if (built.articles.length > 0) article.articles = built.articles;
     }
     articles.push(article);
   }

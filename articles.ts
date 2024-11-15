@@ -40,8 +40,7 @@ export const articles: Articles = {
                 "metadata": {
                   "title": "Hello World4356"
                 },
-                "slug": "subarticle",
-                "articles": []
+                "slug": "subarticle"
               },
               {
                 "metadata": {
