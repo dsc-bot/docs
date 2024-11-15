@@ -1,5 +1,5 @@
 import matter from 'gray-matter';
-import { readdirSync, readFileSync, stat, statSync, writeFileSync } from 'fs';
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'fs';
 import path from 'path';
 
 interface Article {
@@ -41,7 +41,11 @@ function buildArticle(paths: LanguageData['paths'], articles: Article[], rootPat
     const isDir = statSync(filePath).isDirectory();
     if (depth != 1 && file === 'index.md') continue;
 
-    const content = readFileSync(isDir ? path.join(filePath, 'index.md') : filePath, 'utf-8');
+    const mdFilePath = isDir ? path.join(filePath, 'index.md') : filePath;
+
+    if (!existsSync(mdFilePath)) throw `Missing ${mdFilePath}`;
+
+    const content = readFileSync(mdFilePath, 'utf-8');
     const { data: frontMatter } = matter(content);
 
     const article: Article = {
