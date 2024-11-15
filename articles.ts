@@ -12,9 +12,9 @@ export const articles: Articles = {
     "paths": {
       "@": "/index.md",
       "/something": "/something/index.md",
-      "/something/test/subarticle2": "/something/test/subarticle2.md",
       "/something/test": "/something/test/index.md",
-      "/something/test/subarticle": "/something/test/subarticle/index.md"
+      "/something/test/subarticle": "/something/test/subarticle/index.md",
+      "/something/test/subarticle2": "/something/test/subarticle2.md"
     },
     "articles": [
       {
@@ -38,15 +38,16 @@ export const articles: Articles = {
             "articles": [
               {
                 "metadata": {
-                  "title": "Hello Worlddgfs"
+                  "title": "Hello World4356"
                 },
-                "slug": "subarticle2"
+                "slug": "subarticle",
+                "articles": []
               },
               {
                 "metadata": {
-                  "title": "Hello World4356"
+                  "title": "Hello Worlddgfs"
                 },
-                "slug": "subarticle"
+                "slug": "subarticle2"
               }
             ]
           }
