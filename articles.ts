@@ -15,7 +15,9 @@ export const articles: Articles = {
       "/something/test": "/something/test/index.md",
       "/something/test/subarticle": "/something/test/subarticle/index.md",
       "/something/test/subarticle/subarticle2": "/something/test/subarticle/subarticle2.md",
-      "/something/test/subarticle2": "/something/test/subarticle2.md"
+      "/something/test/subarticle2": "/something/test/subarticle2.md",
+      "/something/test/subarticle3": "/something/test/subarticle3.md",
+      "/something/test/subarticle9": "/something/test/subarticle9/index.md"
     },
     "articles": [
       {
@@ -33,7 +35,7 @@ export const articles: Articles = {
         "articles": [
           {
             "metadata": {
-              "title": "Hello Worldsafdgggggggggggggggggggggggg"
+              "title": "Hi World"
             },
             "slug": "test",
             "articles": [
@@ -45,7 +47,7 @@ export const articles: Articles = {
                 "articles": [
                   {
                     "metadata": {
-                      "title": "Hello Worlddgfs"
+                      "title": "Hello World gg"
                     },
                     "slug": "subarticle2"
                   }
@@ -56,6 +58,18 @@ export const articles: Articles = {
                   "title": "Hello Worlddgfs"
                 },
                 "slug": "subarticle2"
+              },
+              {
+                "metadata": {
+                  "title": "Article 3"
+                },
+                "slug": "subarticle3"
+              },
+              {
+                "metadata": {
+                  "title": "Article 9"
+                },
+                "slug": "subarticle9"
               }
             ]
           }
