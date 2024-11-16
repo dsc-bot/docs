@@ -11,6 +11,9 @@ on:
 jobs:
   update-articles:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./scripts
     strategy:
       matrix:
         node-version: [20]
@@ -18,18 +21,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # Required to push changes back
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9
+          run_install: false
+          package_json_file: 'scripts/pnpm-lock.yaml'
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
-
+          cache-dependency-path: 'scripts/pnpm-lock.yaml'
+      
       - name: Install dependencies
         working-directory: ./scripts
         run: pnpm install
