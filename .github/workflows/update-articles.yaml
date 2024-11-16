@@ -8,6 +8,8 @@ on:
     branches: [main]
     paths: ['articles/**']
 
+permissions: write-all
+
 jobs:
   update-articles:
     runs-on: ubuntu-latest
