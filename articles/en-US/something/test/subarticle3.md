@@ -1,8 +1,7 @@
 ---
-title: Hello Worlddgfs
+title: Article 3
 ---
 
-# Article 2
+# Article 3
 
-this article is under subarticle... oooooo
-and it's named the same as the one in the upper directory...  ahhhhh
+ooop?
