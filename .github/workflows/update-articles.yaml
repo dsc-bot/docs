@@ -3,10 +3,10 @@ name: Update Articles File
 on:
   push:
     branches: [main]
-    paths: ['articles/*']
+    paths: ['articles/**']
   pull_request:
     branches: [main]
-    paths: ['articles/*']
+    paths: ['articles/**']
 
 jobs:
   update-articles:
