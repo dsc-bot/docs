@@ -14,6 +14,7 @@ export const articles: Articles = {
       "/something": "/something/index.md",
       "/something/test": "/something/test/index.md",
       "/something/test/subarticle": "/something/test/subarticle/index.md",
+      "/something/test/subarticle/subarticle2": "/something/test/subarticle/subarticle2.md",
       "/something/test/subarticle2": "/something/test/subarticle2.md"
     },
     "articles": [
@@ -40,7 +41,15 @@ export const articles: Articles = {
                 "metadata": {
                   "title": "Hello World4356"
                 },
-                "slug": "subarticle"
+                "slug": "subarticle",
+                "articles": [
+                  {
+                    "metadata": {
+                      "title": "Hello Worlddgfs"
+                    },
+                    "slug": "subarticle2"
+                  }
+                ]
               },
               {
                 "metadata": {
