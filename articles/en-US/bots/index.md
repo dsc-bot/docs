@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Bot Listing
 order: 1
 ---
 
