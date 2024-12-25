@@ -26,13 +26,8 @@ To ensure your banner displays correctly across various devices and layouts, it 
 - **Minimum Aspect Ratio:** 17:6 (ideal for default displays)
   - All banners are displayed at this ratio at minimum, if your banner does not exactly fit this ratio it will be cropped to the center to fit this ratio.
 - **Stretched Aspect Ratio:** 10:2 (used for wider layouts)
-  - Banners on listing page have maximum height of 240 pixels and a maximum width of 1400 pixels. Your banner will be cropped and centered to fit these constraints so it is best to have any text content or logos in your banner to fit in a 10:2 ratio.
-
-### Design Tips
-
-For the best results:
-
-- Design your banner’s primary content (such as text, logos, or critical visuals) to fit within the **10:2 aspect ratio**. This ensures that no important details are cropped or distorted when the banner is stretched.
+  - Banners on listing page have maximum height of 240 pixels and a maximum width of 1400 pixels. Your banner will be cropped and centered to fit these constraints.
+  - Design your banner’s primary content (such as text, logos, or critical visuals) to fit within the **10:2 aspect ratio**. This ensures that no important details are cropped or distorted when the banner is stretched.
 
 ## Guidelines and Terms of Service
 
