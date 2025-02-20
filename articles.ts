@@ -18,6 +18,13 @@ export const articles: Articles = {
     "articles": [
       {
         "metadata": {
+          "title": "Introduction",
+          "order": 1
+        },
+        "slug": "@"
+      },
+      {
+        "metadata": {
           "title": "Bot Listing",
           "order": 1
         },
@@ -25,26 +32,19 @@ export const articles: Articles = {
         "articles": [
           {
             "metadata": {
-              "title": "Banner",
-              "order": 1
-            },
-            "slug": "banner"
-          },
-          {
-            "metadata": {
               "title": "Overview",
               "order": 1
             },
             "slug": "overview"
+          },
+          {
+            "metadata": {
+              "title": "Banner",
+              "order": 2
+            },
+            "slug": "banner"
           }
         ]
-      },
-      {
-        "metadata": {
-          "title": "Introduction",
-          "order": 1
-        },
-        "slug": "@"
       }
     ]
   }
