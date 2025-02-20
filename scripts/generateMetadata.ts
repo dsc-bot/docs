@@ -3,7 +3,10 @@ import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from '
 import path from 'path';
 
 interface Article {
-  metadata: Record<string, unknown>;
+  metadata: {
+    title?: string;
+    order?: number;
+  } & Record<string, unknown>;
   slug: string;
   articles?: Article[];
 }
@@ -57,12 +60,17 @@ function buildArticle(paths: LanguageData['paths'], articles: Article[], rootPat
     if (isDir) {
       const built = buildArticle(paths, [], filePath, depth+1);
       paths = Object.assign(paths, built.paths);
-      if (built.articles.length > 0) article.articles = built.articles;
+      if (built.articles.length > 0) article.articles = sortArticles(built.articles);
     }
     articles.push(article);
   }
+  articles = sortArticles(articles);
 
   return { paths, articles };
+}
+
+function sortArticles(articles: Article[]) {
+  return articles.sort((a,b) => a.slug == '@' ? -1 : (a.metadata.order || 0) - (b.metadata.order || 0))
 }
 
 processMarkdownFiles().catch(console.error);
