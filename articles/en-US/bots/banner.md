@@ -1,6 +1,6 @@
 ---
 title: Banner
-order: 1
+order: 2
 ---
 
 # Bot Listing Banners
