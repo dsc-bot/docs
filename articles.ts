@@ -13,13 +13,15 @@ export const articles: Articles = {
       "/bots": "/bots/index.md",
       "/bots/banner": "/bots/banner.md",
       "/bots/overview": "/bots/overview.md",
-      "@": "/index.md"
+      "@": "/index.md",
+      "/legal": "/legal/index.md",
+      "/legal/privacy-policy": "/legal/privacy-policy.md"
     },
     "articles": [
       {
         "metadata": {
           "title": "Introduction",
-          "order": 1
+          "order": 0
         },
         "slug": "@"
       },
@@ -43,6 +45,22 @@ export const articles: Articles = {
               "order": 2
             },
             "slug": "banner"
+          }
+        ]
+      },
+      {
+        "metadata": {
+          "title": "Legal",
+          "order": 999
+        },
+        "slug": "legal",
+        "articles": [
+          {
+            "metadata": {
+              "title": "Privacy Policy",
+              "order": 1
+            },
+            "slug": "privacy-policy"
           }
         ]
       }
