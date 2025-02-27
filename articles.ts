@@ -13,6 +13,7 @@ export const articles: Articles = {
       "/bots": "/bots/index.md",
       "/bots/banner": "/bots/banner.md",
       "/bots/overview": "/bots/overview.md",
+      "/bots/permissions": "/bots/permissions.md",
       "@": "/index.md",
       "/legal": "/legal/index.md",
       "/legal/privacy-policy": "/legal/privacy-policy.md"
@@ -38,6 +39,13 @@ export const articles: Articles = {
               "order": 1
             },
             "slug": "overview"
+          },
+          {
+            "metadata": {
+              "title": "Permissions",
+              "order": 1
+            },
+            "slug": "permissions"
           },
           {
             "metadata": {
