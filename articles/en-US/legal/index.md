@@ -1,6 +1,6 @@
 ---
 title: Legal
-order: 999
+order: 2
 ---
 
 # Legal Directory
