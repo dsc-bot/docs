@@ -59,7 +59,7 @@ export const articles: Articles = {
       {
         "metadata": {
           "title": "Legal",
-          "order": 999
+          "order": 2
         },
         "slug": "legal",
         "articles": [
