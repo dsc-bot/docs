@@ -3,9 +3,9 @@ title: Permissions
 order: 1
 ---
 
-# Permissions
+# Member Permissions
 
-This page will describe each listing permission and what they are used for.
+This page will describe each permission a listing member can have and what they are used for.
 
 | Permission              | Can Access                                                                   |
 | :---------------------- | :--------------------------------------------------------------------------- |
