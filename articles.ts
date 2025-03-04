@@ -42,7 +42,7 @@ export const articles: Articles = {
           },
           {
             "metadata": {
-              "title": "Permissions",
+              "title": "Member Permissions",
               "order": 1
             },
             "slug": "permissions"

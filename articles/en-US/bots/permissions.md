@@ -1,5 +1,5 @@
 ---
-title: Permissions
+title: Member Permissions
 order: 1
 ---
 
